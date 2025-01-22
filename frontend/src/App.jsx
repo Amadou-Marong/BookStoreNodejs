@@ -36,8 +36,10 @@ function App() {
     <>
       <main>
         <NavBar navLinks={navLinks}/>
+        <div className="mt-8">
         <AddBookModal showModal={showModal} setShowModal={setShowModal} fetchBooks={fetchBooks}/>
         <BooksList books={books} setShowModal={setShowModal} fetchBooks={fetchBooks}/>
+        </div>
       </main>
     </>
   )
